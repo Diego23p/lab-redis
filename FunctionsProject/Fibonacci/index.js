@@ -6,14 +6,14 @@ const bluebird = require("bluebird");
 bluebird.promisifyAll(redis);
 
 //conectar a base de datos
-/*
+
 const client = redis.createClient(
     {
         host: 'localhost',
         port: '6379'
     }
-);*/
-
+);
+/*
 const client = redis.createClient(
     6380,'redis-experiment.redis.cache.windows.net',
     {
@@ -22,7 +22,7 @@ const client = redis.createClient(
             servername: 'redis-experiment.redis.cache.windows.net'
         }
     }
-);
+);*/
 
 
 async function fibonacciExists(nth){
@@ -52,7 +52,7 @@ async function fibonacci(nth){
         return (await getFibonacci(nth));
     }
     else{
-        rta = (await fibonacci(nth-1)).add((await fibonacci(nth-2)));
+        rta = (await fibonacci(nth-1)).add(await fibonacci(nth-2));
         await setFibonacci(nth, rta);
     }
     return rta;

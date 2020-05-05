@@ -8,52 +8,72 @@
 
 ### Localhost:
 
-#### Sin memoria
+Inicio del servidor y su cliente:
 
-##### nth = 100
+![](img/16.jpg)
 
-##### nth = 200 (incremental de 100)
+Ejecución de la función:
 
-##### nth = 300 (incremental de 200)
+![](img/15.jpg)
 
-##### nth = 200 (directo)
+nth = 100 (incremental desde 0)
 
-##### nth = 300 (directo)
+![](img/8.jpg)
 
-#### Con memoria
+nth = 200 (incremental desde 100)
 
-##### nth = 100
+![](img/9.jpg)
 
-##### nth = 200 (incremental de 100)
+nth = 300 (incremental desde 200)
 
-##### nth = 300 (incremental de 200)
+![](img/10.jpg)
 
-##### nth = 200 (directo)
+nth = 100 (directo)
 
-##### nth = 300 (directo)
+![](img/11.jpg)
+
+nth = 200 (directo)
+
+![](img/12.jpg)
+
+nth = 300 (directo)
+
+![](img/13.jpg)
 
 ### Azure:
 
-#### Sin memoria
+nth = 100 (incremental desde 0)
 
-##### nth = 100
+![](img/4.jpg)
 
-##### nth = 200 (incremental de 100)
+nth = 200 (incremental desde 100)
 
-##### nth = 300 (incremental de 200)
+![](img/5.jpg)
 
-##### nth = 200 (directo)
+nth = 300 (incremental desde 200)
 
-##### nth = 300 (directo)
+![](img/6.jpg)
 
-#### Con memoria
+nth = 100 (directo)
 
-##### nth = 100
+![](img/1.jpg)
 
-##### nth = 200 (incremental de 100)
+nth = 200 (directo)
 
-##### nth = 300 (incremental de 200)
+![](img/2.jpg)
 
-##### nth = 200 (directo)
+nth = 300 (directo)
 
-##### nth = 300 (directo)
+![](img/3.jpg)
+
+### Resumen
+
+![](img/17.jpg)
+
+### Conclusuiones
+
+- El factor más influyente es la memorización, debido a que el funcionamiento ya sea en Azure o localhost, incrementa en gran medida
+
+- Cuando se realizan pruebas de manera incremental el factor de aumento es casi lineal cuando nth tambíen lo hace
+
+- De forma incremental, la diferencia es mínima cuando se compara Azure y localhost, de forma directa sí se percibe una diferencia considerable
